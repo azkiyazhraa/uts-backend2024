@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('phone');
             $table->text('address');
             $table->integer('graduation_year');
-            $table->string('status');
+            $table->enum('status', ['employed', 'unemployed', 'graduated']);
             $table->string('company_name');
             $table->string('position');
             $table->timestamps();
